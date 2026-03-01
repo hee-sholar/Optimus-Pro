@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import React, { useEffect } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
-import { ArrowRight } from "lucide-react"
-import BigPicture from "./BigPicture"
-import CommunitySection from "./CommunitySection"
-import IndustrySection from "./IndustrySection"
-import ConnectSection from "./ConnectSection"
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { ArrowRight } from "lucide-react";
+import BigPicture from "./BigPicture";
+import CommunitySection from "./CommunitySection";
+import IndustrySection from "./IndustrySection";
+import ConnectSection from "./ConnectSection";
 
 // Custom 4-pointed AI Star Icon
 const AiStar = ({ size = 16, className }) => (
@@ -28,29 +28,33 @@ const AiStar = ({ size = 16, className }) => (
     <line x1="12" y1="10" x2="12" y2="14" />
     <line x1="10" y1="12" x2="14" y2="12" />
   </svg>
-)
+);
 
 export default function Hero() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <>
       <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 pt-28 pb-24 sm:pt-36 sm:pb-32">
         <div className="mx-auto max-w-4xl text-center">
-
           {/* Badge */}
-          <div data-aos="zoom-in" className="flex justify-center mb-8 px-2 sm:px-0">
-  <div className="inline-flex flex-nowrap items-center gap-2 sm:gap-3 bg-blue-950/40 border border-blue-800/40 rounded-full px-3 sm:px-4 py-2 backdrop-blur-sm max-w-full">
-    {/* AI Star Icon */}
-    <AiStar size={20} className="text-blue-400 flex-shrink-0" />
+          {/* Badge */}
+<div
+  data-aos="zoom-in"
+  className="flex justify-center mb-8 px-2"
+>
+  <div className="flex items-center gap-2 bg-blue-950/40 border border-blue-800/40 rounded-full px-3 py-2 backdrop-blur-sm whitespace-nowrap overflow-x-auto scrollbar-hide">
     
+    {/* AI Star Icon */}
+    <AiStar size={16} className="text-blue-400 flex-shrink-0" />
+
     {/* Badge Text */}
-    <span className="text-xs sm:text-sm text-blue-200 truncate">
+    <span className="text-xs sm:text-sm text-blue-200">
       We build intelligent products for the decentralized future
     </span>
   </div>
@@ -62,8 +66,8 @@ export default function Hero() {
             data-aos-delay="200"
             className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-100 leading-tight mb-6"
           >
-            <span className="text-gray-500">Building</span> the Future at the Intersection of{" "}
-              AI, Blockchain & Community
+            <span className="text-gray-500">Building</span> the Future at the
+            Intersection of AI, Blockchain & Community
           </h1>
 
           {/* Subheading */}
@@ -73,8 +77,8 @@ export default function Hero() {
             className="text-slate-400 text-base sm:text-lg mb-10 leading-relaxed max-w-2xl mx-auto"
           >
             A frontier technology startup pushing the boundaries of intelligent,
-            secure, and community-centric products redefining how people interact
-            with technology.
+            secure, and community-centric products redefining how people
+            interact with technology.
           </p>
 
           {/* Buttons */}
@@ -114,7 +118,8 @@ export default function Hero() {
 
         <style jsx>{`
           @keyframes float {
-            0%, 100% {
+            0%,
+            100% {
               transform: translateY(0px);
               opacity: 0.3;
             }
@@ -131,5 +136,5 @@ export default function Hero() {
       <IndustrySection />
       <ConnectSection />
     </>
-  )
+  );
 }
