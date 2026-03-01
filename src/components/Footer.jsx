@@ -118,7 +118,7 @@ export default function Footer() {
           data-aos="fade-up"
           data-aos-delay="600"
         >
-          <p>© 2025 Optimus PRO. All rights reserved.</p>
+          <p>© 2026 Optimus PRO. All rights reserved.</p>
 
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-slate-300 transition-colors">

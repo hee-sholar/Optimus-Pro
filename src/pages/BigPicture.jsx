@@ -23,7 +23,7 @@ export default function BigPicture() {
         {/* ===== BIG PICTURE ===== */}
         <div
           data-aos="fade-up"
-          className="max-w-3xl mx-auto text-center p-10 mb-20 backdrop-blur-md bg-blue-950/20"
+          className="max-w-3xl mx-auto text-center p-10 mb-20 backdrop-blur-md"
         >
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
             The BIG Picture
