@@ -16,7 +16,13 @@ export default function Navbar() {
     })
   }, [])
 
-  const navItems = ["Products", "Community", "Company", "Contact"]
+  // Define nav items with their paths
+  const navItems = [
+    { name: "Products", path: "/products" },
+    { name: "Community", path: "/community" },
+    { name: "Company", path: "/company" },
+    { name: "Contact", path: "/contact" },
+  ]
 
   return (
     <nav
@@ -30,36 +36,36 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 cursor-pointer">
-            <img
-              src="/opti.png"
-              alt="Optimus Logo"
-              className="h-8 w-auto"
-            />
+            <img src="/opti.png" alt="Optimus Logo" className="h-8 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center gap-10 text-sm">
               {navItems.map((item) => (
-                <button
-                  key={item}
-                  className="text-slate-300 hover:text-cyan-400 transition duration-300 cursor-pointer"
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="text-slate-300 hover:text-cyan-400 transition duration-300"
                 >
-                  {item}
-                </button>
+                  {item.name}
+                </Link>
               ))}
             </div>
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex">
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-600 
-            hover:from-cyan-400 hover:to-blue-500 
-            text-white px-5 py-2 rounded-lg font-medium 
-            flex items-center gap-2 transition shadow-lg shadow-cyan-500/20">
+            <Link
+              to="/join"
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 
+              hover:from-cyan-400 hover:to-blue-500 
+              text-white px-5 py-2 rounded-lg font-medium 
+              flex items-center gap-2 transition shadow-lg shadow-cyan-500/20"
+            >
               Join The Movement
               <ArrowRight size={16} />
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Toggle */}
@@ -82,22 +88,26 @@ export default function Navbar() {
       >
         <div className="px-6 py-6 space-y-6 text-center">
           {navItems.map((item) => (
-            <button
-              key={item}
+            <Link
+              key={item.name}
+              to={item.path}
               onClick={() => setIsOpen(false)}
               className="block w-full text-slate-300 hover:text-cyan-400 transition text-lg"
             >
-              {item}
-            </button>
+              {item.name}
+            </Link>
           ))}
 
-          <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 
-          hover:from-cyan-400 hover:to-blue-500 
-          text-white px-6 py-3 rounded-lg font-medium 
-          flex items-center justify-center gap-2 transition">
+          <Link
+            to="/join"
+            className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 
+            hover:from-cyan-400 hover:to-blue-500 
+            text-white px-6 py-3 rounded-lg font-medium 
+            flex items-center justify-center gap-2 transition"
+          >
             Join The Movement
             <ArrowRight size={16} />
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

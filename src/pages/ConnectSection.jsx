@@ -47,49 +47,6 @@ export default function ConnectSection() {
         </div>
       </div>
 
-      {/* Divider Line */}
-      <div className="w-full h-[2px] bg-blue-500/30"></div>
-
-      {/* ================= NEWSLETTER ================= */}
-      <div className="bg-[#031225] py-24 px-6 md:px-20">
-        <div
-          data-aos="fade-up"
-          className="max-w-xl mx-auto text-center"
-        >
-          <h3 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-4">
-            Stay Updated on Our Journey
-          </h3>
-
-          <p className="text-gray-400 mb-10">
-            Join our newsletter to receive regular updates on our progress,
-            product developments, and exciting news from our team.
-          </p>
-
-          {/* Input */}
-          <input
-            type="email"
-            placeholder="Email Address"
-            className="w-full mb-4 px-4 py-3 rounded-md 
-                       bg-[#071426] border border-blue-500/20 
-                       focus:outline-none focus:border-blue-500 
-                       text-sm"
-          />
-
-          {/* Button */}
-          <button className="w-full bg-blue-600 hover:bg-blue-700 
-                             transition px-6 py-3 rounded-md 
-                             text-sm font-medium">
-            Subscribe
-          </button>
-
-          {/* Disclaimer */}
-          <p className="text-gray-500 text-xs mt-6 italic">
-            We respect your inbox. Updates monthly.  
-            Unsubscribe anytime.
-          </p>
-        </div>
-      </div>
-
     </section>
   );
 }

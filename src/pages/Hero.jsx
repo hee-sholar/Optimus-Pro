@@ -6,9 +6,7 @@ import "aos/dist/aos.css"
 import { ArrowRight, Star } from "lucide-react"
 import BigPicture from "./BigPicture"
 import CommunitySection from "./CommunitySection"
-import StatsSection from "./StatsSection"
 import IndustrySection from "./IndustrySection"
-import BlogSection from "./BlogSection"
 import ConnectSection from "./ConnectSection"
 
 export default function Hero() {
@@ -111,9 +109,7 @@ export default function Hero() {
     </section>
     <BigPicture />
     <CommunitySection />
-    <StatsSection />
     <IndustrySection />
-    <BlogSection />
     <ConnectSection />
     </>
   )
