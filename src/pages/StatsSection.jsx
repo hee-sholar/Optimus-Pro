@@ -1,4 +1,3 @@
-// StatsSection.js
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,30 +8,31 @@ const StatItem = ({ icon, target, label, duration = 2000 }) => {
 
   useEffect(() => {
     let start = 0;
-    const increment = target / (duration / 50);
-    const interval = setInterval(() => {
+    const totalFrames = duration / 16;
+    const increment = target / totalFrames;
+
+    const counter = setInterval(() => {
       start += increment;
       if (start >= target) {
         start = target;
-        clearInterval(interval);
+        clearInterval(counter);
       }
       setCount(Math.floor(start));
-    }, 50);
+    }, 16);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(counter);
   }, [target, duration]);
 
   return (
     <div
-      className="flex flex-col items-center justify-center text-center space-y-2
-                 bg-gradient-to-br from-black via-blue-900 to-blue-500
-                 border border-blue-500
-                 p-6 rounded-3xl shadow-2xl w-60"
       data-aos="fade-up"
+      className="flex flex-col items-center justify-center text-center space-y-3 px-10 py-8"
     >
-      <div className="text-white text-4xl">{icon}</div>
-      <div className="text-3xl font-bold text-white">{count.toLocaleString()}+</div>
-      <div className="text-gray-200">{label}</div>
+      <div className="text-blue-500">{icon}</div>
+      <div className="text-4xl md:text-5xl font-bold text-white">
+        {count.toLocaleString()}+
+      </div>
+      <div className="text-gray-400">{label}</div>
     </div>
   );
 };
@@ -43,15 +43,45 @@ const StatsSection = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-b from-[#020617] via-[#07132a] to-[#020617] py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center space-y-6">
-        <h3 className="text-gray-300 uppercase tracking-wide">Our Story in Numbers</h3>
-        <p className="text-gray-400">More than just words, our traction speaks for itself</p>
+    <section className="bg-gradient-to-b from-black via-blue-950 to-black py-24 px-6">
+      <div className="max-w-6xl mx-auto text-center">
+        <h3 className="text-gray-300 uppercase tracking-widest text-sm">
+          Our Story in Numbers
+        </h3>
+        <p className="text-gray-500 mt-3">
+          More than just words, our traction speaks for itself
+        </p>
 
-        <div className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-8">
-          <StatItem icon={<Handshake size={40} />} target={115} label="Global co-builders" />
-          <StatItem icon={<Box size={40} />} target={3} label="Products in active development" />
-          <StatItem icon={<Users size={40} />} target={25000} label="Wait-listed users" />
+        {/* Stats Row */}
+        <div className="mt-16 flex flex-col md:flex-row justify-center items-stretch">
+          
+          {/* Stat 1 */}
+          <div className="flex-1 border-b md:border-b-0 md:border-r border-gray-700">
+            <StatItem
+              icon={<Handshake size={42} />}
+              target={115}
+              label="Global co-builders"
+            />
+          </div>
+
+          {/* Stat 2 */}
+          <div className="flex-1 border-b md:border-b-0 md:border-r border-gray-700">
+            <StatItem
+              icon={<Box size={42} />}
+              target={3}
+              label="Products in active development"
+            />
+          </div>
+
+          {/* Stat 3 */}
+          <div className="flex-1">
+            <StatItem
+              icon={<Users size={42} />}
+              target={25000}
+              label="Wait-listed users"
+            />
+          </div>
+
         </div>
       </div>
     </section>
