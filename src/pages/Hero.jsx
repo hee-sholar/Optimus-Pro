@@ -45,21 +45,24 @@ export default function Hero() {
 
           {/* Badge */}
           <div data-aos="zoom-in" className="flex justify-center mb-8 px-2 sm:px-0">
-            <div className="inline-flex items-center gap-2 sm:gap-3 bg-blue-950/40 border border-blue-800/40 rounded-full px-3 sm:px-4 py-2 backdrop-blur-sm max-w-full">
-              <AiStar size={20} className="text-blue-400 flex-shrink-0" />
-              <span className="text-xs sm:text-sm text-blue-200">
-                We build intelligent products for the decentralized future
-              </span>
-            </div>
-          </div>
+  <div className="inline-flex flex-nowrap items-center gap-2 sm:gap-3 bg-blue-950/40 border border-blue-800/40 rounded-full px-3 sm:px-4 py-2 backdrop-blur-sm max-w-full">
+    {/* AI Star Icon */}
+    <AiStar size={20} className="text-blue-400 flex-shrink-0" />
+    
+    {/* Badge Text */}
+    <span className="text-xs sm:text-sm text-blue-200 truncate">
+      We build intelligent products for the decentralized future
+    </span>
+  </div>
+</div>
 
           {/* Heading */}
           <h1
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-500 leading-tight mb-6"
+            className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-100 leading-tight mb-6"
           >
-            Building the Future at the Intersection of{" "}
+            <span className="text-gray-500">Building</span> the Future at the Intersection of{" "}
               AI, Blockchain & Community
           </h1>
 
