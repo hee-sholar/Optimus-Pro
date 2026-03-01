@@ -65,7 +65,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <button className="px-8 py-3 border border-slate-600 hover:border-slate-500 text-white rounded-lg font-medium transition">
-            Read Bytepaper
+            Explore Products
           </button>
 
           <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium flex items-center gap-2 transition shadow-lg shadow-blue-600/30">
