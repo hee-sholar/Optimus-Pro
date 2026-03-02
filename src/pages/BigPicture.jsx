@@ -46,11 +46,11 @@ export default function BigPicture() {
 
           {/* LEFT TEXT */}
           <div data-aos="fade-right">
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4 mt-6">
               What we are building
             </h3>
 
-            <p className="text-slate-400 mb-6">
+            <p className="text-slate-400 mb-6 mt-4">
               Explore next-generation products by Optimus PRO Labs
             </p>
 
@@ -59,7 +59,7 @@ export default function BigPicture() {
               decentralized technology usable, intelligent, and human-centered.
             </p>
 
-            <p className="text-slate-400 leading-relaxed">
+            <p className="text-slate-400 leading-relaxed mt-72">
               Together, these layers power a more intelligent, secure,
               and human-centric decentralized ecosystem for everyday users.
             </p>
