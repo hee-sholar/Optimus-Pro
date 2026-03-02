@@ -29,7 +29,9 @@ function App() {
           </Routes>
         </div>
 
-        <Footer />
+        {/* <section id="#footer">
+          <Footer />
+        </section> */}
       </div>
     </BrowserRouter>
   )

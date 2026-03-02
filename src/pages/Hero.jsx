@@ -8,27 +8,7 @@ import BigPicture from "./BigPicture";
 import CommunitySection from "./CommunitySection";
 import IndustrySection from "./IndustrySection";
 import ConnectSection from "./ConnectSection";
-
-// Custom 4-pointed AI Star Icon
-const AiStar = ({ size = 16, className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <polygon points="12,2 14,12 22,12 14,14 12,22 10,14 2,12 10,12 12,2" />
-    <circle cx="12" cy="12" r="2" fill="#00f" />
-    <line x1="12" y1="10" x2="12" y2="14" />
-    <line x1="10" y1="12" x2="14" y2="12" />
-  </svg>
-);
+import Footer from "../components/Footer";
 
 export default function Hero() {
   useEffect(() => {
@@ -50,7 +30,6 @@ export default function Hero() {
           {/* Badge */}
           <div data-aos="zoom-in" className="flex justify-center mb-8 px-">
             <div className="flex items-center gap-2 bg-blue-950/40 border border-blue-800/40 rounded-full px-3 py-2 backdrop-blur-sm">
-
               {/* Badge Text */}
               <span className="text-xs sm:text-sm text-blue-200">
                 We build intelligent products for the decentralized future
@@ -85,14 +64,20 @@ export default function Hero() {
             data-aos-delay="600"
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <button className="w-full sm:w-auto px-6 py-3 border border-slate-600 hover:border-slate-500 text-white rounded-lg font-medium transition text-center">
-              Explore Products
-            </button>
+            {/* Explore Products Button */}
+            <a href="#products" className="w-full sm:w-auto">
+              <button className="cursor-pointer w-full px-6 py-3 border border-slate-600 hover:border-slate-500 text-white rounded-lg font-medium transition text-center">
+                Explore Products
+              </button>
+            </a>
 
-            <button className="w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium flex justify-center items-center gap-2 transition shadow-lg shadow-blue-600/30">
-              Join the Optimus
-              <ArrowRight size={16} />
-            </button>
+            {/* Join Button */}
+            <a href="#footer" className="w-full sm:w-auto">
+              <button className="cursor-pointer w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium flex justify-center items-center gap-2 transition shadow-lg shadow-blue-600/30">
+                Join the Optimus
+                <ArrowRight size={16} />
+              </button>
+            </a>
           </div>
         </div>
 
@@ -146,6 +131,11 @@ export default function Hero() {
       {/* CONNECT */}
       <section id="contact">
         <ConnectSection />
+      </section>
+
+      {/* FOOTER */}
+      <section id="footer">
+        <Footer />
       </section>
     </>
   );
