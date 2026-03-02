@@ -31,16 +31,16 @@ export default function BigPicture() {
             The BIG Picture
           </h2>
 
-          <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
-            The next era of the internet won’t be defined by{" "}
-            <em className="italic text-white/90">hype or speculation</em>.
-            It will be shaped by intelligence, trust, and aligned communities.
-            Optimus PRO exists to make that future real.
-            <br className="hidden md:block" />
-            <br className="hidden md:block" />
-            We believe the future isn’t just decentralized.
-            It’s intelligent, open, secure, and collective by design.
-          </p>
+         <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-full md:max-w-3xl mx-auto">
+  The next era of the internet won’t be defined by{" "}
+  <em className="italic text-white/90">hype or speculation</em>.
+  It will be shaped by intelligence, trust, and aligned communities.
+  Optimus PRO exists to make that future real.
+  <br className="hidden md:block" />
+  <br className="hidden md:block" />
+  We believe the future isn’t just decentralized.
+  It’s intelligent, open, secure, and collective by design.
+</p>
         </div>
 
         {/* Divider */}

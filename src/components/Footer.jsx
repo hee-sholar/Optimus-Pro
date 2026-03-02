@@ -62,10 +62,6 @@ export default function Footer() {
             <Twitter className={iconStyle} size={20} />
           </a>
 
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <Github className={iconStyle} size={20} />
-          </a>
-
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <Instagram className={iconStyle} size={20} />
           </a>
