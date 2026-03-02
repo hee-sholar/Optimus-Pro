@@ -17,7 +17,7 @@ export default function BigPicture() {
 
       {/* ===== DOTTED OVERLAY ===== */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <div className="w-full h-full bg-[radial-gradient(circle,_#2563eb_1px,_transparent_1px)] [background-size:22px_22px]" />
+        <div className="w-full h-full bg-[radial-gradient(circle,_#2563eb_6px,_transparent_6px)] [background-size:50px_50px]" />
       </div>
 
       <div className="relative max-w-7xl mx-auto">
@@ -33,9 +33,7 @@ export default function BigPicture() {
 
           <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             The next era of the internet won’t be defined by{" "}
-            <em className="italic text-white/90">
-              hype or speculation
-            </em>.
+            <em className="italic text-white/90">hype or speculation</em>.
             It will be shaped by intelligence, trust, and aligned communities.
             Optimus PRO exists to make that future real.
             <br className="hidden md:block" />
@@ -52,7 +50,10 @@ export default function BigPicture() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT TEXT */}
-          <div data-aos="fade-right">
+          <div
+            data-aos="fade-right"
+            className="animate-[floatSlow_6s_ease-in-out_infinite]"
+          >
             <h3 className="text-2xl md:text-3xl font-semibold mb-6">
               What we are building
             </h3>
@@ -102,6 +103,20 @@ export default function BigPicture() {
 
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes floatSlow {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-12px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+      `}</style>
     </section>
   )
 }
