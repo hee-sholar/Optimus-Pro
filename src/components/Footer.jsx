@@ -19,76 +19,76 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="relative bg-[#020817] text-white pt-20 pb-10 px-6 md:px-20 overflow-hidden">
+    <footer className="relative bg-[#020817] text-white pt-24 pb-12 px-6 overflow-hidden">
 
-      {/* ====== CONTENT ====== */}
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 relative z-10">
+      {/* ===== MAIN CONTENT ===== */}
+      <div className="relative z-10 max-w-4xl mx-auto text-center">
 
-        {/* LEFT SIDE */}
-        <div data-aos="fade-up">
-          <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
-            Optimus PRO
-          </h2>
+        {/* Logo */}
+        <div data-aos="fade-up" className="flex justify-center mb-6">
+          <img
+            src="/opti.png"
+            alt="Optimus PRO"
+            className="h-10 sm:h-12 object-contain"
+          />
+        </div>
 
-          <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
-            Be part of a growing movement building intelligent, decentralized
-            systems for the next era of the internet.
-          </p>
+        {/* Description */}
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-gray-400 text-sm sm:text-base leading-relaxed mb-8 px-4"
+        >
+          Be part of a growing movement building intelligent, decentralized
+          systems for the next era of the internet.
+        </p>
 
-          {/* Social Icons */}
-          <div className="flex gap-4 text-gray-400">
-            <Linkedin className="hover:text-white cursor-pointer transition" size={18} />
-            <Twitter className="hover:text-white cursor-pointer transition" size={18} />
-            <Github className="hover:text-white cursor-pointer transition" size={18} />
-            <Instagram className="hover:text-white cursor-pointer transition" size={18} />
-          </div>
+        {/* Social Icons */}
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="flex justify-center gap-6 text-gray-400 mb-8"
+        >
+          <Linkedin className="hover:text-white cursor-pointer transition duration-300 hover:scale-110" size={20} />
+          <Twitter className="hover:text-white cursor-pointer transition duration-300 hover:scale-110" size={20} />
+          <Github className="hover:text-white cursor-pointer transition duration-300 hover:scale-110" size={20} />
+          <Instagram className="hover:text-white cursor-pointer transition duration-300 hover:scale-110" size={20} />
+        </div>
 
-          {/* Button */}
-          <button className="mt-6 bg-blue-600 hover:bg-blue-700 transition px-5 py-2 rounded-md text-sm font-medium">
+        {/* Button */}
+        <div data-aos="fade-up" data-aos-delay="300">
+          <button className="bg-gradient-to-r from-blue-600 to-cyan-500 
+            hover:from-blue-500 hover:to-cyan-400 
+            px-6 py-3 rounded-lg text-sm font-medium 
+            transition shadow-lg shadow-blue-600/20"
+          >
             Join The Movement
           </button>
         </div>
-
-        {/* NAVIGATIONS */}
-        <div data-aos="fade-up" data-aos-delay="100">
-          <h3 className="font-semibold mb-4">Navigations</h3>
-          <ul className="space-y-2 text-sm text-gray-400">
-            <li className="hover:text-white cursor-pointer">Community</li>
-            <li className="hover:text-white cursor-pointer">Resources</li>
-            <li className="hover:text-white cursor-pointer">Company</li>
-            <li className="hover:text-white cursor-pointer">Contact Us</li>
-          </ul>
-        </div>
-
-        {/* QUICK LINKS */}
-        <div data-aos="fade-up" data-aos-delay="200">
-          <h3 className="font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-sm text-gray-400">
-            <li className="hover:text-white cursor-pointer">About Us</li>
-            <li className="hover:text-white cursor-pointer">Testimonials</li>
-            <li className="hover:text-white cursor-pointer">Blogs</li>
-          </ul>
-        </div>
       </div>
 
-      {/* ====== BOTTOM BAR ====== */}
-      <div className="max-w-7xl mx-auto border-t border-blue-500/20 mt-16 pt-6 flex flex-col md:flex-row justify-between text-xs text-gray-400 relative z-10">
+      {/* ===== BOTTOM BAR ===== */}
+      <div className="relative z-10 max-w-6xl mx-auto border-t border-blue-500/20 mt-16 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400 text-center md:text-left">
         <p>© 2026 Optimus PRO. All rights reserved.</p>
-        <div className="flex gap-4 mt-3 md:mt-0">
-          <span className="hover:text-white cursor-pointer">Privacy Policy</span>
-          <span className="hover:text-white cursor-pointer">Terms of Service</span>
+
+        <div className="flex gap-6">
+          <span className="hover:text-white cursor-pointer transition">
+            Privacy Policy
+          </span>
+          <span className="hover:text-white cursor-pointer transition">
+            Terms of Service
+          </span>
         </div>
       </div>
 
-      {/* ====== BIG BACKGROUND TEXT ====== */}
-      <div className="absolute bottom-0 left-0 w-full text-center pointer-events-none select-none">
-        <h1 className="text-[80px] md:text-[180px] font-bold text-white/5 tracking-widest whitespace-nowrap">
+      {/* ===== BIG BACKGROUND TEXT ===== */}
+      <div className="absolute bottom-0 left-0 w-full flex justify-center pointer-events-none select-none">
+        <h1 className="text-[60px] sm:text-[120px] md:text-[180px] font-bold text-white/5 tracking-widest whitespace-nowrap">
           Optimus PRO
         </h1>
       </div>
 
-      {/* Gradient Overlay for fade effect */}
+      {/* Gradient Fade Overlay */}
       <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#020817] to-transparent pointer-events-none"></div>
 
     </footer>
