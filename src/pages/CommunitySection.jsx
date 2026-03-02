@@ -4,7 +4,7 @@ import React from "react"
 
 export default function CommunitySection() {
   return (
-    <section id="#community" className="relative overflow-hidden py-24 px-6 text-white">
+    <section id="#community" className="relative overflow-hidden px-6 text-white">
 
       {/* ===== BACKGROUND GRADIENT ===== */}
       <div className="absolute inset-0 -z-20 bg-gradient-to-b from-[#020617] via-[#07132a] to-[#020617]" />

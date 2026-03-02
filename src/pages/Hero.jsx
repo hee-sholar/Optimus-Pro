@@ -41,15 +41,15 @@ export default function Hero() {
   return (
     <>
       {/* HERO SECTION */}
-  <section
-    id="hero"
-    className="relative overflow-hidden px-4 sm:px-6 lg:px-8 pt-28 pb-24 sm:pt-36 sm:pb-32"
-  >
+      <section
+        id="hero"
+        className="relative overflow-hidden px-4 sm:px-6 lg:px-8 pt-28 pb-24 sm:pt-36"
+      >
         <div className="mx-auto max-w-4xl text-center">
           {/* Badge */}
           {/* Badge */}
-          <div data-aos="zoom-in" className="flex justify-center mb-8 px-2">
-            <div className="flex items-center gap-2 bg-blue-950/40 border border-blue-800/40 rounded-full px-3 py-2 backdrop-blur-sm whitespace-nowrap overflow-x-auto scrollbar-hide">
+          <div data-aos="zoom-in" className="flex justify-center mb-8 px-">
+            <div className="flex items-center gap-2 bg-blue-950/40 border border-blue-800/40 rounded-full px-3 py-2 backdrop-blur-sm">
               {/* AI Star Icon */}
               <AiStar size={16} className="text-blue-400 flex-shrink-0" />
 
@@ -132,23 +132,23 @@ export default function Hero() {
       </section>
 
       <section id="products">
-    <BigPicture />
-  </section>
+        <BigPicture />
+      </section>
 
-  {/* COMMUNITY */}
-  <section id="community">
-    <CommunitySection />
-  </section>
+      {/* COMMUNITY */}
+      <section id="community">
+        <CommunitySection />
+      </section>
 
-  {/* INDUSTRY */}
-  <section id="company">
-    <IndustrySection />
-  </section>
+      {/* INDUSTRY */}
+      <section id="company">
+        <IndustrySection />
+      </section>
 
-  {/* CONNECT */}
-  <section id="contact">
-    <ConnectSection />
-  </section>
+      {/* CONNECT */}
+      <section id="contact">
+        <ConnectSection />
+      </section>
     </>
   );
 }

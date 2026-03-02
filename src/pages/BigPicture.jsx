@@ -7,7 +7,7 @@ export default function BigPicture() {
   return (
     <section
       id="products"
-      className="relative overflow-hidden py-28 px-6 text-white"
+      className="relative overflow-hidden px-6 text-white mb-0"
     >
       {/* ===== BASE GRADIENT ===== */}
       <div className="absolute inset-0 -z-20 bg-gradient-to-b from-[#020617] via-[#07132a] to-[#020617]" />
