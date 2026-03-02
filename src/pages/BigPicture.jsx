@@ -32,7 +32,10 @@ export default function BigPicture() {
           </h2>
 
           <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
-            The next era of the internet won’t be defined by hype or speculation.
+            The next era of the internet won’t be defined by{" "}
+            <em className="italic text-white/90">
+              hype or speculation
+            </em>.
             It will be shaped by intelligence, trust, and aligned communities.
             Optimus PRO exists to make that future real.
             <br className="hidden md:block" />
@@ -71,12 +74,15 @@ export default function BigPicture() {
 
           {/* RIGHT CARD */}
           <div data-aos="fade-left">
-
-            <div className="group border border-blue-500/30 rounded-2xl p-8 bg-blue-950/20 backdrop-blur-xl 
+            <div
+              className="group border border-blue-500/30 rounded-2xl p-8 bg-blue-950/20 backdrop-blur-xl 
               hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/10 
               transition duration-300"
             >
-              <Wallet className="text-blue-400 mb-6 group-hover:scale-110 transition" size={36} />
+              <Wallet
+                className="text-blue-400 mb-6 group-hover:scale-110 transition"
+                size={36}
+              />
 
               <h4 className="text-xl font-semibold mb-3">
                 Proxion
@@ -92,8 +98,8 @@ export default function BigPicture() {
                 Learn more →
               </span>
             </div>
-
           </div>
+
         </div>
       </div>
     </section>

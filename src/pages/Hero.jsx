@@ -50,8 +50,6 @@ export default function Hero() {
           {/* Badge */}
           <div data-aos="zoom-in" className="flex justify-center mb-8 px-">
             <div className="flex items-center gap-2 bg-blue-950/40 border border-blue-800/40 rounded-full px-3 py-2 backdrop-blur-sm">
-              {/* AI Star Icon */}
-              <AiStar size={16} className="text-blue-400 flex-shrink-0" />
 
               {/* Badge Text */}
               <span className="text-xs sm:text-sm text-blue-200">

@@ -8,6 +8,8 @@ import {
   Twitter,
   Instagram,
   Github,
+  Send,        // Telegram alternative icon
+  MessageCircle, // Discord alternative icon
 } from "lucide-react";
 
 export default function Footer() {
@@ -18,9 +20,12 @@ export default function Footer() {
     });
   }, []);
 
+  const iconStyle =
+    "hover:text-white cursor-pointer transition duration-300 hover:scale-110";
+
   return (
     <footer className="relative bg-[#020817] text-white pt-24 pb-12 px-6 overflow-hidden">
-
+      
       {/* ===== MAIN CONTENT ===== */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
 
@@ -47,17 +52,39 @@ export default function Footer() {
         <div
           data-aos="fade-up"
           data-aos-delay="200"
-          className="flex justify-center gap-6 text-gray-400 mb-8"
+          className="flex justify-center gap-6 text-gray-400 mb-8 flex-wrap"
         >
-          <Linkedin className="hover:text-white cursor-pointer transition duration-300 hover:scale-110" size={20} />
-          <Twitter className="hover:text-white cursor-pointer transition duration-300 hover:scale-110" size={20} />
-          <Github className="hover:text-white cursor-pointer transition duration-300 hover:scale-110" size={20} />
-          <Instagram className="hover:text-white cursor-pointer transition duration-300 hover:scale-110" size={20} />
+          <a href="https://www.linkedin.com/company/optimusproinc/" target="_blank" rel="noopener noreferrer">
+            <Linkedin className={iconStyle} size={20} />
+          </a>
+
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <Twitter className={iconStyle} size={20} />
+          </a>
+
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Github className={iconStyle} size={20} />
+          </a>
+
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <Instagram className={iconStyle} size={20} />
+          </a>
+
+          {/* Telegram */}
+          <a href="https://x.com/OptimusPRO_org" target="_blank" rel="noopener noreferrer">
+            <Send className={iconStyle} size={20} />
+          </a>
+
+          {/* Discord */}
+          <a href="https://discord.gg/yourinvite" target="_blank" rel="noopener noreferrer">
+            <MessageCircle className={iconStyle} size={20} />
+          </a>
         </div>
 
         {/* Button */}
         <div data-aos="fade-up" data-aos-delay="300">
-          <button className="bg-gradient-to-r from-blue-600 to-cyan-500 
+          <button
+            className="bg-gradient-to-r from-blue-600 to-cyan-500 
             hover:from-blue-500 hover:to-cyan-400 
             px-6 py-3 rounded-lg text-sm font-medium 
             transition shadow-lg shadow-blue-600/20"
