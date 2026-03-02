@@ -18,7 +18,7 @@ export default function ConnectSection() {
     <section className="w-full bg-[#020817] text-white">
 
       {/* ================= LET'S CONNECT ================= */}
-      <div className=" px-6 md:px-20">
+      <div className=" px-6 md:px-20 py-10">
         <div
           data-aos="fade-up"
           className="max-w-4xl mx-auto border border-blue-500/30 
