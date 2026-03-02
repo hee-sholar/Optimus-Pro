@@ -4,7 +4,7 @@ import React from "react"
 
 export default function CommunitySection() {
   return (
-    <section className="relative overflow-hidden py-24 px-6 text-white">
+    <section id="#community" className="relative overflow-hidden py-24 px-6 text-white">
 
       {/* ===== BACKGROUND GRADIENT ===== */}
       <div className="absolute inset-0 -z-20 bg-gradient-to-b from-[#020617] via-[#07132a] to-[#020617]" />
@@ -19,7 +19,7 @@ export default function CommunitySection() {
 
           <p className="text-blue-400 mb-3">We Don’t Build Alone</p>
 
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-6">
             Built with the Optimists, not just for them
           </h2>
 

@@ -40,7 +40,11 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 pt-28 pb-24 sm:pt-36 sm:pb-32">
+      {/* HERO SECTION */}
+  <section
+    id="hero"
+    className="relative overflow-hidden px-4 sm:px-6 lg:px-8 pt-28 pb-24 sm:pt-36 sm:pb-32"
+  >
         <div className="mx-auto max-w-4xl text-center">
           {/* Badge */}
           {/* Badge */}
@@ -127,10 +131,24 @@ export default function Hero() {
         `}</style>
       </section>
 
-      <BigPicture />
-      <CommunitySection />
-      <IndustrySection />
-      <ConnectSection />
+      <section id="products">
+    <BigPicture />
+  </section>
+
+  {/* COMMUNITY */}
+  <section id="community">
+    <CommunitySection />
+  </section>
+
+  {/* INDUSTRY */}
+  <section id="company">
+    <IndustrySection />
+  </section>
+
+  {/* CONNECT */}
+  <section id="contact">
+    <ConnectSection />
+  </section>
     </>
   );
 }

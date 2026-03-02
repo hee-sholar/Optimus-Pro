@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { ArrowRight, Menu, X } from "lucide-react"
-import { Link } from "react-router-dom"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,13 +15,29 @@ export default function Navbar() {
     })
   }, [])
 
-  // Define nav items with their paths
+  // Section IDs instead of paths
   const navItems = [
-    { name: "Products", path: "/products" },
-    { name: "Community", path: "/community" },
-    { name: "Company", path: "/company" },
-    { name: "Contact", path: "/contact" },
+    { name: "Products", id: "products" },
+    { name: "Community", id: "community" },
+    { name: "Company", id: "company" },
+    { name: "Contact", id: "contact" },
   ]
+
+  const handleScroll = (id) => {
+    const section = document.getElementById(id)
+    if (section) {
+      const offset = 80 // adjust for fixed navbar height
+      const top =
+        section.getBoundingClientRect().top + window.pageYOffset - offset
+
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      })
+    }
+
+    setIsOpen(false)
+  }
 
   return (
     <nav
@@ -35,29 +50,32 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 cursor-pointer">
+          <div
+            onClick={() => handleScroll("hero")}
+            className="flex items-center gap-3 cursor-pointer"
+          >
             <img src="/opti.png" alt="Optimus Logo" className="h-8 w-auto" />
-          </Link>
+          </div>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center gap-10 text-sm">
               {navItems.map((item) => (
-                <Link
+                <button
                   key={item.name}
-                  to={item.path}
-                  className="text-slate-300 hover:text-cyan-400 transition duration-300"
+                  onClick={() => handleScroll(item.id)}
+                  className="text-slate-300 hover:text-cyan-400 transition duration-300 cursor-pointer"
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
             </div>
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex">
-            <Link
-              to="/join"
+            <button
+              onClick={() => handleScroll("contact")}
               className="bg-gradient-to-r from-cyan-500 to-blue-600 
               hover:from-cyan-400 hover:to-blue-500 
               text-white px-5 py-2 rounded-lg font-medium 
@@ -65,7 +83,7 @@ export default function Navbar() {
             >
               Join The Movement
               <ArrowRight size={16} />
-            </Link>
+            </button>
           </div>
 
           {/* Mobile Toggle */}
@@ -88,18 +106,17 @@ export default function Navbar() {
       >
         <div className="px-6 py-6 space-y-6 text-center">
           {navItems.map((item) => (
-            <Link
+            <button
               key={item.name}
-              to={item.path}
-              onClick={() => setIsOpen(false)}
+              onClick={() => handleScroll(item.id)}
               className="block w-full text-slate-300 hover:text-cyan-400 transition text-lg"
             >
               {item.name}
-            </Link>
+            </button>
           ))}
 
-          <Link
-            to="/join"
+          <button
+            onClick={() => handleScroll("contact")}
             className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 
             hover:from-cyan-400 hover:to-blue-500 
             text-white px-6 py-3 rounded-lg font-medium 
@@ -107,7 +124,7 @@ export default function Navbar() {
           >
             Join The Movement
             <ArrowRight size={16} />
-          </Link>
+          </button>
         </div>
       </div>
     </nav>
