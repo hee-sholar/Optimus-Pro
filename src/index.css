@@ -5,3 +5,13 @@
 body {
   font-family: 'Outfit', sans-serif;
 }
+
+.text-justify-last-center {
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: center;
+}
+
+.hyphens-auto {
+  hyphens: auto;
+}

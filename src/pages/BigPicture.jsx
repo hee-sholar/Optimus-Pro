@@ -31,21 +31,22 @@ export default function BigPicture() {
             <div className="px-5 md:px-0">
               <p
                 className="
-      text-slate-300
-      text-[clamp(14.5px,3.8vw,16px)]
-      leading-[1.75]
-      text-justify md:text-center
-      mx-auto
-      max-w-[min(92vw,360px)]
-      md:max-w-3xl
-    "
+    text-slate-300
+    text-[15px] md:text-lg
+    leading-[1.65] md:leading-relaxed
+    tracking-[-0.01em]
+    text-justify
+    mx-auto
+    max-w-[330px] md:max-w-2xl
+    hyphens-auto
+  "
               >
-                The next era of the internet won’t be defined by
-                <em className="italic text-white/90"> hype or speculation</em>.
-                It will be shaped by intelligence, trust, and aligned
-                communities. Optimus PRO exists to make that future real. We
-                believe the future isn’t just decentralized. It’s intelligent,
-                open, secure, and collective by design.
+                The next era of the internet won’t be defined by{" "}
+                <em className="italic text-white">hype or speculation</em>. It
+                will be shaped by intelligence, trust, and aligned communities.
+                Optimus PRO exists to make that future real. We believe the
+                future isn’t just decentralized. It’s intelligent, open, secure
+                and collec<span className="text-center">tive by design</span>.
               </p>
             </div>
           </div>
