@@ -28,21 +28,26 @@ export default function BigPicture() {
           </h2>
 
           <div className="px-6 md:px-0">
-            <p
-              className="text-slate-300
-               text-[15px] md:text-lg
-               leading-7 md:leading-relaxed
-               text-center
-               max-w-[330px] md:max-w-3xl
-               mx-auto"
-            >
-              The next era of the internet won’t be defined by
-              <em className="italic text-white/90"> hype or speculation</em>. It
-              will be shaped by intelligence, trust, and aligned communities.
-              Optimus PRO exists to make that future real. We believe the future
-              isn’t just decentralized. It’s intelligent, open, secure, and
-              collective by design.
-            </p>
+            <div className="px-5 md:px-0">
+              <p
+                className="
+      text-slate-300
+      text-[clamp(14.5px,3.8vw,16px)]
+      leading-[1.75]
+      text-justify md:text-center
+      mx-auto
+      max-w-[min(92vw,360px)]
+      md:max-w-3xl
+    "
+              >
+                The next era of the internet won’t be defined by
+                <em className="italic text-white/90"> hype or speculation</em>.
+                It will be shaped by intelligence, trust, and aligned
+                communities. Optimus PRO exists to make that future real. We
+                believe the future isn’t just decentralized. It’s intelligent,
+                open, secure, and collective by design.
+              </p>
+            </div>
           </div>
         </div>
 
