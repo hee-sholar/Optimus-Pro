@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import React from "react"
-import { Wallet } from "lucide-react"
+import React from "react";
+import { Wallet } from "lucide-react";
 
 export default function BigPicture() {
   return (
@@ -21,26 +21,29 @@ export default function BigPicture() {
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-
         {/* ================= BIG PICTURE ================= */}
-        <div
-          data-aos="fade-up"
-          className="max-w-4xl mx-auto text-center mb-24"
-        >
+        <div data-aos="fade-up" className="max-w-4xl mx-auto text-center mb-24">
           <h2 className="text-3xl md:text-5xl font-semibold mb-6 tracking-tight">
             The BIG Picture
           </h2>
 
-         <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-full md:max-w-3xl mx-auto">
-  The next era of the internet won’t be defined by{" "}
-  <em className="italic text-white/90">hype or speculation</em>.
-  It will be shaped by intelligence, trust, and aligned communities.
-  Optimus PRO exists to make that future real.
-  <br className="hidden md:block" />
-  <br className="hidden md:block" />
-  We believe the future isn’t just decentralized.
-  It’s intelligent, open, secure, and collective by design.
-</p>
+          <div className="px-6 md:px-0">
+            <p
+              className="text-slate-300
+               text-[15px] md:text-lg
+               leading-7 md:leading-relaxed
+               text-center
+               max-w-[330px] md:max-w-3xl
+               mx-auto"
+            >
+              The next era of the internet won’t be defined by
+              <em className="italic text-white/90"> hype or speculation</em>. It
+              will be shaped by intelligence, trust, and aligned communities.
+              Optimus PRO exists to make that future real. We believe the future
+              isn’t just decentralized. It’s intelligent, open, secure, and
+              collective by design.
+            </p>
+          </div>
         </div>
 
         {/* Divider */}
@@ -48,7 +51,6 @@ export default function BigPicture() {
 
         {/* ================= WHAT WE ARE BUILDING ================= */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-
           {/* LEFT TEXT */}
           <div
             data-aos="fade-right"
@@ -68,8 +70,8 @@ export default function BigPicture() {
             </p>
 
             <p className="text-slate-400 leading-relaxed">
-              Together, these layers power a more intelligent, secure,
-              and human-centric decentralized ecosystem for everyday users.
+              Together, these layers power a more intelligent, secure, and
+              human-centric decentralized ecosystem for everyday users.
             </p>
           </div>
 
@@ -85,14 +87,12 @@ export default function BigPicture() {
                 size={36}
               />
 
-              <h4 className="text-xl font-semibold mb-3">
-                Proxion
-              </h4>
+              <h4 className="text-xl font-semibold mb-3">Proxion</h4>
 
               <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                The intelligent wallet for the new digital economy.
-                A smart, secure gateway for managing identity, assets,
-                and interactions across Web3.
+                The intelligent wallet for the new digital economy. A smart,
+                secure gateway for managing identity, assets, and interactions
+                across Web3.
               </p>
 
               <span className="text-sm text-blue-400 cursor-pointer group-hover:text-blue-300">
@@ -100,7 +100,6 @@ export default function BigPicture() {
               </span>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -118,5 +117,5 @@ export default function BigPicture() {
         }
       `}</style>
     </section>
-  )
+  );
 }
