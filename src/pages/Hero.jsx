@@ -43,7 +43,7 @@ export default function Hero() {
             data-aos-delay="200"
             className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-100 leading-tight mb-6"
           >
-            <span className="text-gray-500">Building</span> the Future at the
+            <span className="">Building</span> the Future at the
             Intersection of AI, Blockchain & Community
           </h1>
 
