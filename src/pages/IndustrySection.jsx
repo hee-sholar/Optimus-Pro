@@ -11,6 +11,7 @@ import {
   Code,
   Palette,
   Briefcase,
+  Linkedin,
 } from "lucide-react";
 
 export default function IndustrySection() {
@@ -22,48 +23,94 @@ export default function IndustrySection() {
     });
   }, []);
 
+  const testimonials = [
+    {
+      name: "Corrales Cachola",
+      role: "Founder, Brand New Voices",
+      image:
+        "https://media.licdn.com/dms/image/v2/D5603AQHrDw-Lgy_lsQ/profile-displayphoto-shrink_200_200/B56ZeBW6kLGQAc-/0/1750221957991?e=1774483200&v=beta&t=OMZ0omfsQLWj7HjqhHuruGmtZDuX6Fx8VK02WWXUY8I",
+      linkedin:
+        "https://www.linkedin.com/in/corycachola?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      quote:
+        "Henry is OG web3 and understands the important nuances of blockchain, how it is interconnected with other systems, and how it impacts people. I can’t wait to see where he takes Optimus PRO!",
+    },
+    {
+      name: "Sarah Kim",
+      role: "AI Product Lead, FutureStack",
+      image: "https://i.pravatar.cc/100?img=48",
+      linkedin: "https://www.linkedin.com/",
+      quote:
+        "Optimus PRO is building the kind of infrastructure the next generation of AI and decentralized systems will rely on.",
+    },
+    {
+      name: "Michael Torres",
+      role: "Blockchain Architect, NovaChain",
+      image: "https://i.pravatar.cc/100?img=12",
+      linkedin: "https://www.linkedin.com/",
+      quote:
+        "The team behind Optimus PRO understands where technology and community intersect. That’s rare in this space.",
+    },
+  ];
+
   return (
     <div className="w-full bg-[#020817] text-white py-20 px-6 md:px-20 overflow-hidden">
-      
       {/* ================= TESTIMONIAL SECTION ================= */}
       <div className="max-w-7xl mx-auto mb-24">
-        <h3 className="text-center text-blue-400 font-medium mb-2">
-          Don't Take Our Word For It
-        </h3>
+        <div className="max-w-xl mx-auto">
+          <h3 className="text-center text-blue-400 text-2xl mb-2 sm:text-3xl md:text-4xl font-semibold leading-tight">
+            Don't Take Our Word For It
+          </h3>
 
-        <h2
-          data-aos="fade-up"
-          className="text-center text-2xl md:text-3xl font-semibold mb-12"
-        >
-          What industry leaders are saying about us
-        </h2>
+          <h2
+            data-aos="fade-up"
+            className="text-center text-lg sm:text-xl md:text-3xl font-medium text-gray-200 leading-snug mb-10"
+          >
+            What industry leaders are saying about us
+          </h2>
+        </div>
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((item) => (
+          {testimonials.map((item, index) => (
             <div
-              key={item}
+              key={index}
               data-aos="zoom-in"
               className="bg-[#071426] border border-blue-500/20 rounded-xl p-6 backdrop-blur-md hover:border-blue-500/50 transition-all duration-300 shadow-[0_0_30px_rgba(0,140,255,0.05)]"
             >
               <p className="text-sm text-gray-300 leading-relaxed mb-6">
-                “Most Web3 projects solve technology problems. Optimus PRO is
-                solving usability problems. That’s the difference between
-                building demos and building for mass adoption.”
+                “{item.quote}”
               </p>
 
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400" />
-                <div>
-                  <p className="text-sm font-medium">Name</p>
-                  <p className="text-xs text-gray-400">Title, Company</p>
+              <div className="flex items-center justify-between">
+                {/* Profile */}
+                <div className="flex items-center gap-3">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-10 h-10 rounded-full object-cover border border-blue-500/30"
+                  />
+
+                  <div>
+                    <p className="text-sm font-medium">{item.name}</p>
+                    <p className="text-xs text-gray-400">{item.role}</p>
+                  </div>
                 </div>
+
+                {/* LinkedIn */}
+                <a
+                  href={item.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 transition"
+                >
+                  <Linkedin size={18} />
+                </a>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Bottom Navigation Arrows */}
+        {/* Bottom Navigation */}
         <div className="flex justify-center items-center gap-6 mt-10">
           <button className="p-3 rounded-full bg-[#0B1C2D] hover:bg-blue-600 transition">
             <ChevronLeft size={20} />
@@ -77,8 +124,6 @@ export default function IndustrySection() {
 
       {/* ================= CAREER SECTION ================= */}
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        
-        {/* LEFT TEXT */}
         <div data-aos="fade-right">
           <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-blue-400">
             Build the Future with Optimus PRO
@@ -86,8 +131,8 @@ export default function IndustrySection() {
 
           <p className="text-gray-400 mb-6 leading-relaxed">
             We’re looking for top engineers, designers, product leads, and
-            community builders who’re passionate about AI, blockchain, and
-            building products that empower people.
+            community builders passionate about AI, blockchain, and building
+            products that empower people.
           </p>
 
           <button className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 transition px-5 py-2 rounded-md text-sm font-medium">
@@ -96,7 +141,6 @@ export default function IndustrySection() {
           </button>
         </div>
 
-        {/* RIGHT ROLE CARDS */}
         <div
           data-aos="fade-left"
           className="bg-[#071426] border border-blue-500/20 p-6 rounded-xl shadow-[0_0_40px_rgba(0,140,255,0.05)]"

@@ -74,7 +74,7 @@ export default function Hero() {
             {/* Join Button */}
             <a href="#footer" className="w-full sm:w-auto">
               <button className="cursor-pointer w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium flex justify-center items-center gap-2 transition shadow-lg shadow-blue-600/30">
-                Join the Optimus
+                Join the Optimists
                 <ArrowRight size={16} />
               </button>
             </a>

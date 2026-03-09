@@ -74,11 +74,6 @@ export default function BigPicture() {
               We’re building a connected suite of products designed to make
               decentralized technology usable, intelligent, and human-centered.
             </p>
-
-            <p className="text-slate-400 leading-relaxed">
-              Together, these layers power a more intelligent, secure, and
-              human-centric decentralized ecosystem for everyday users.
-            </p>
           </div>
 
           {/* RIGHT CARD */}
