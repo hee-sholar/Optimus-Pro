@@ -27,8 +27,8 @@ export default function BigPicture() {
             The BIG Picture
           </h2>
 
-          <div className="px-6 md:px-0">
-            <div className="px-5 md:px-0">
+          <div className="md:px-0">
+            <div className="md:px-0">
               <p
                 className="
     text-slate-300

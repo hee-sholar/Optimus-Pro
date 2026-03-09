@@ -81,7 +81,7 @@ export default function Navbar() {
               text-white px-5 py-2 rounded-lg font-medium 
               flex items-center gap-2 transition shadow-lg shadow-cyan-500/20"
             >
-              Join The Movement
+              Join Optimus PRO
               <ArrowRight size={16} />
             </button>
           </div>
@@ -122,7 +122,7 @@ export default function Navbar() {
             text-white px-6 py-3 rounded-lg font-medium 
             flex items-center justify-center gap-2 transition"
           >
-            Join The Movement
+            Join Optimus PRO
             <ArrowRight size={16} />
           </button>
         </div>

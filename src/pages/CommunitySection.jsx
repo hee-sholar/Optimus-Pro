@@ -16,7 +16,7 @@ export default function CommunitySection() {
 
       <div className="max-w-7xl mx-auto">
         {/* ================= TOP COMMUNITY BOX ================= */}
-        <div className="p-8 md:p-12 mb-24 backdrop-blur-md max-w-4xl mx-auto">
+        <div className="mb-24 backdrop-blur-md max-w-4xl mx-auto">
           {/* Heading */}
           <p className="text-blue-400 text-center text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight">
             We Don’t Build Alone
@@ -28,8 +28,8 @@ export default function CommunitySection() {
           </h2>
 
           {/* Body */}
-          <div className="max-w-md md:max-w-3xl mx-auto text-left">
-            <p className="text-slate-300 leading-relaxed mb-5">
+          <div className="max-w-md md:max-w-3xl md:px-0">
+            <p className="text-slate-300 leading-relaxed mb-5 mx-auto text-justify hyphens-auto">
               Everything we build at Optimus PRO is shaped alongside a growing
               collective of Optimists — our global community of visionaries,
               builders, innovators, and early believers bound by a shared vision
