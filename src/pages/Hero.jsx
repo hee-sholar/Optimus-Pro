@@ -53,9 +53,7 @@ export default function Hero() {
             data-aos-delay="400"
             className="text-slate-400 text-base sm:text-lg mb-10 leading-relaxed max-w-2xl mx-auto"
           >
-            A frontier technology startup pushing the boundaries of intelligent,
-            secure, and community-centric products redefining how people
-            interact with technology.
+            Optimus PRO is building intelligent, secure, and community-driven products that redefines how people interact with technology.
           </p>
 
           {/* Buttons */}
