@@ -18,7 +18,7 @@ export default function CommunitySection() {
         {/* ================= TOP COMMUNITY BOX ================= */}
         <div className="mb-24 backdrop-blur-md max-w-4xl mx-auto">
           {/* Heading */}
-          <p className="text-blue-400 text-center text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight">
+          <p className="text-blue-400 text-center text-2xl sm:text-3xl font-semibold tracking-tight">
             We Don’t Build Alone
           </p>
 
