@@ -23,7 +23,7 @@ export default function CommunitySection() {
           </p>
 
           {/* Subheading */}
-          <h2 className="font-semibold text-center mt-2 mb-6">
+          <h2 className="font-semibold text-center mb-6">
             Built with the Optimists, for global adoption
           </h2>
 
@@ -56,11 +56,11 @@ export default function CommunitySection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT TEXT */}
           <div>
-            <h3 className="text-3xl md:text-4xl text-blue-400 font-semibold mb-4">
+            <h3 className="text-2xl text-blue-400 font-semibold mb-0">
               How everything connects
             </h3>
 
-            <p className="text-slate-400 mb-6 text-2xl">
+            <p className="text-slate-400 mb-6">
               Reimaging the frontier technology ecosystem
             </p>
 

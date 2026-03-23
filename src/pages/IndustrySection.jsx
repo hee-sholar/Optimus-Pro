@@ -57,13 +57,13 @@ export default function IndustrySection() {
       {/* ================= TESTIMONIAL SECTION ================= */}
       <div className="max-w-7xl mx-auto mb-24">
         <div className="max-w-xl mx-auto">
-          <h3 className="text-center text-blue-400 text-2xl mb-2 sm:text-3xl md:text-4xl font-semibold leading-tight">
+          <h3 className="text-center text-blue-400 text-2xl mb-2 sm:text-3xl font-semibold leading-tight">
             Don't Take Our Word For It
           </h3>
 
           <h2
             data-aos="fade-up"
-            className="text-center text-lg sm:text-xl md:text-3xl font-medium text-gray-200 leading-snug mb-10"
+            className="text-center text-lg sm:text-xl md:text-2xl font-medium text-gray-200 leading-snug mb-10"
           >
             What industry leaders are saying about us
           </h2>

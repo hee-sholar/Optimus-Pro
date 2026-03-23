@@ -62,12 +62,12 @@ export default function BigPicture() {
             data-aos="fade-right"
             className="animate-[floatSlow_6s_ease-in-out_infinite]"
           >
-            <h3 className="text-2xl md:text-3xl font-semibold mb-6">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-1">
               What we are building
             </h3>
 
-            <p className="text-slate-400 mb-6">
-              Explore next-generation products by Optimus PRO Labs.
+            <p className="text-slate-400 mb-6 whitespace-nowrap text-sm md:text-base">
+              Next-generation products by Optimus PRO Labs.
             </p>
 
             <p className="text-slate-400 leading-relaxed mb-6">
