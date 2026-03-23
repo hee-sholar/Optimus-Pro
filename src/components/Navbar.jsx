@@ -79,7 +79,7 @@ export default function Navbar() {
               className="bg-gradient-to-r from-cyan-500 to-blue-600 
               hover:from-cyan-400 hover:to-blue-500 
               text-white px-5 py-2 rounded-lg font-medium 
-              flex items-center gap-2 transition shadow-lg shadow-cyan-500/20"
+              flex items-center gap-2 transition shadow-lg shadow-cyan-500/20 cursor-pointer"
             >
               Join Optimus PRO
               <ArrowRight size={16} />
@@ -120,7 +120,7 @@ export default function Navbar() {
             className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 
             hover:from-cyan-400 hover:to-blue-500 
             text-white px-6 py-3 rounded-lg font-medium 
-            flex items-center justify-center gap-2 transition"
+            flex items-center justify-center gap-2 transition cursor-pointer"
           >
             Join Optimus PRO
             <ArrowRight size={16} />
