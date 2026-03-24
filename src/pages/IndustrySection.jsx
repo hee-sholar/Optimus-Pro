@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -135,10 +134,15 @@ export default function IndustrySection() {
             products that empower people.
           </p>
 
-          <button className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 transition px-5 py-2 rounded-md text-sm font-medium">
+          <a
+            href="https://tally.so/r/0QLVgj"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 transition px-5 py-2 rounded-md text-sm font-medium"
+          >
             View Open Positions
             <ArrowRight size={16} />
-          </button>
+          </a>
         </div>
 
         <div

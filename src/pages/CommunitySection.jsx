@@ -43,9 +43,14 @@ export default function CommunitySection() {
 
           {/* Button */}
           <div className="flex justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-md text-sm font-medium shadow-lg shadow-blue-600/30">
+            <a
+              href="https://tally.so/r/lbLD0v"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-md text-sm font-medium shadow-lg shadow-blue-600/30"
+            >
               Join the Contributors
-            </button>
+            </a>
           </div>
         </div>
 
