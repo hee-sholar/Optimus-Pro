@@ -27,7 +27,7 @@ export default function IndustrySection() {
       name: "Corrales Cachola",
       role: "Founder, Brand New Voices",
       image:
-        "https://media.licdn.com/dms/image/v2/D5603AQHrDw-Lgy_lsQ/profile-displayphoto-shrink_200_200/B56ZeBW6kLGQAc-/0/1750221957991?e=1774483200&v=beta&t=OMZ0omfsQLWj7HjqhHuruGmtZDuX6Fx8VK02WWXUY8I",
+        "https://media.licdn.com/dms/image/v2/D5603AQHrDw-Lgy_lsQ/profile-displayphoto-shrink_200_200/B56ZeBW6kLGQAc-/0/1750221957991?e=1776297600&v=beta&t=EgOKFAaNbQYOaiRRHpPkdDGtTHQy_UlPpLqA55TlE3Y",
       linkedin:
         "https://www.linkedin.com/in/corycachola?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       quote:

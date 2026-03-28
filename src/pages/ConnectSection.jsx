@@ -16,7 +16,6 @@ export default function ConnectSection() {
 
   return (
     <section className="w-full bg-[#020817] text-white">
-
       {/* ================= LET'S CONNECT ================= */}
       <div className=" px-6 md:px-20 py-10">
         <div
@@ -34,19 +33,23 @@ export default function ConnectSection() {
           </p>
 
           <p className="text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-            Whether you’re a potential partner, investor, fellow builder,
-            or just curious about what we’re creating, we’d love to hear from you.
+            Whether you’re a potential partner, investor, fellow builder, or
+            just curious about what we’re creating, we’d love to hear from you.
           </p>
 
-          <button className="inline-flex items-center gap-2 bg-blue-600 
-                             hover:bg-blue-700 transition 
-                             px-6 py-2 rounded-md text-sm font-medium">
+          <a
+            href="https://www.linkedin.com/company/optimusproinc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-blue-600 
+             hover:bg-blue-700 transition cursor-pointer
+             px-6 py-2 rounded-md text-sm font-medium"
+          >
             Start a Conversation
             <ArrowRight size={16} />
-          </button>
+          </a>
         </div>
       </div>
-
     </section>
   );
 }
