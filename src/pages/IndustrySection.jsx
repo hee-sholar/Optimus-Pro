@@ -110,7 +110,7 @@ export default function IndustrySection() {
         </div>
 
         {/* Bottom Navigation */}
-        <div className="flex justify-center items-center gap-6 mt-10">
+        {/* <div className="flex justify-center items-center gap-6 mt-10">
           <button className="p-3 rounded-full bg-[#0B1C2D] hover:bg-blue-600 transition">
             <ChevronLeft size={20} />
           </button>
@@ -118,7 +118,7 @@ export default function IndustrySection() {
           <button className="p-3 rounded-full bg-[#0B1C2D] hover:bg-blue-600 transition">
             <ChevronRight size={20} />
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* ================= CAREER SECTION ================= */}

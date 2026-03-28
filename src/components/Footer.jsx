@@ -8,8 +8,8 @@ import {
   Twitter,
   Instagram,
   Github,
-  Send,        // Telegram alternative icon
-  MessageCircle, // Discord alternative icon
+  Send,
+  MessageCircle,
 } from "lucide-react";
 
 export default function Footer() {
@@ -21,7 +21,7 @@ export default function Footer() {
   }, []);
 
   const iconStyle =
-    "hover:text-white cursor-pointer transition duration-300 hover:scale-110";
+    "hover:text-white transition duration-300 hover:scale-110";
 
   return (
     <footer className="relative bg-[#020817] text-white pt-24 pb-12 px-6 overflow-hidden">
@@ -58,32 +58,33 @@ export default function Footer() {
             <Linkedin className={iconStyle} size={20} />
           </a>
 
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/OptimusPRO_org" target="_blank" rel="noopener noreferrer">
             <Twitter className={iconStyle} size={20} />
           </a>
 
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/optimuspro_org" target="_blank" rel="noopener noreferrer">
             <Instagram className={iconStyle} size={20} />
           </a>
 
           {/* Telegram */}
-          <a href="https://x.com/OptimusPRO_org" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/optimuspro" target="_blank" rel="noopener noreferrer">
             <Send className={iconStyle} size={20} />
           </a>
 
           {/* Discord */}
-          <a href="https://discord.gg/yourinvite" target="_blank" rel="noopener noreferrer">
+          <a href="https://discord.gg/CYkVRGUVY" target="_blank" rel="noopener noreferrer">
             <MessageCircle className={iconStyle} size={20} />
           </a>
         </div>
 
-        {/* Button */}
+        {/* CTA (clean, no strong border) */}
         <div data-aos="fade-up" data-aos-delay="300">
           <button
-            className="bg-gradient-to-r from-blue-600 to-cyan-500 
-            hover:from-blue-500 hover:to-cyan-400 
-            px-6 py-3 rounded-lg text-sm font-medium 
-            transition shadow-lg shadow-blue-600/20"
+            className="
+              bg-gradient-to-r from-blue-600 to-cyan-500
+              px-6 py-3 rounded-lg text-sm font-medium text-white
+              shadow-md
+            "
           >
             Join The Movement
           </button>
@@ -111,7 +112,7 @@ export default function Footer() {
         </h1>
       </div>
 
-      {/* Gradient Fade Overlay */}
+      {/* Gradient Fade */}
       <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#020817] to-transparent pointer-events-none"></div>
 
     </footer>
