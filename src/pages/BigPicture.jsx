@@ -96,9 +96,15 @@ export default function BigPicture() {
                 across Web3.
               </p>
 
-              <span className="text-sm text-blue-400 cursor-pointer group-hover:text-blue-300">
-                Learn more →
-              </span>
+              <a
+                href="https://docs.google.com/document/d/1q52w-WEGKbJ1mqRIIlIzDwlLYnsGDUDkrTDQYfsD8cs/edit?usp=drivesdk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-sm text-blue-400 cursor-pointer group-hover:text-blue-300">
+                  Learn more →
+                </span>
+              </a>
             </div>
           </div>
         </div>
