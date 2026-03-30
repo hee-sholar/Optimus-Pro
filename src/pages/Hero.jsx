@@ -9,6 +9,7 @@ import CommunitySection from "./CommunitySection";
 import IndustrySection from "./IndustrySection";
 import ConnectSection from "./ConnectSection";
 import Footer from "../components/Footer";
+import ContributorPopup from "../components/ContributorPopup";
 
 export default function Hero() {
   useEffect(() => {
@@ -20,7 +21,8 @@ export default function Hero() {
 
   return (
     <>
-      {/* HERO SECTION */}
+      {/* POPUP */}
+      <ContributorPopup />
       <section
         id="hero"
         className="relative overflow-hidden px-4 sm:px-6 lg:px-8 pt-28 pb-24 sm:pt-36"
